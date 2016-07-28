@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebApp</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<!-- Header -->
+    <div id="headerDiv">
+        <div class="container" style="height: 50px">
+            <p class="navbar-text" style="font-size: 25px;color: #23527c">WEB APP</p>
+        </div>
+    </div>
+
+<!-- Main -->
+    <div class="container" id="mainContainer">
+
+        <div style="background-color: darkslateblue">
+            <h2 style="color: #ffffff">Parameters</h2>
+            <h3 style="color: #ffffff">Employee options</h3>
+        </div>
+
+        <button id="btnAddNewEmp" class="btn-success">Add NEW</button>
+        <div class="container" style="width: 80%;background-color: #ffffff">
+            <div id="newEmployee" class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>NEW EMPLOYEE</h3>
+                        <div style="width: 100px" class="form-group"><label for="first_name">Name</label>
+                            <input type="text" class="form-control" id="first_name" placeholder="Ivan">
+                        </div>
+                        <div style="width: 100px" class="form-group"><label for="last_name">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" placeholder="Ivanov">
+                        </div>
+                        <div  style="width: 200px" class="form-group">
+                            <label for="e_mail">Email</label>
+                            <input type="email" class="form-control" id="e_mail" placeholder="ivan.ivanov@example.com">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="opt_1" style="margin: 15px; margin-top: 100px" type="checkbox">Option 1</input>
+                        <input id="opt_2" style="margin: 15px" type="checkbox">Option 2</input>
+                        <input id="opt_3" style="margin: 15px" type="checkbox">Option 3</input>
+                        <input id="opt_4" style="margin: 15px" type="checkbox">Option 4</input>
+                        <input id="opt_5" style="margin: 15px" type="checkbox">Option 5</input>
+                    </div>
+                </div>
+                <button id="saveNewEmp">Save new Employee</button>
+                <button id="clearNewEmp">Close Panel</button>
+            </div>
+
+        </div>
+
+        <div id="dataContainer" class="container">
+
+        </div>
+
+    </div>
+
+<!-- Footer -->
+    <div id="footerDiv">
+        <div style="height: 30px;">
+            <p style="padding-left: 45%;">©2016 Rafi</p>
+        </div>
+    </div>
+
+<!-- Scripts -->
+    <script src="scripts/lib/jquery-1.11.2.js"></script>
+    <script src="scripts/lib/bootstrap.min.js"></script>
+    <script src="scripts/employee.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>
